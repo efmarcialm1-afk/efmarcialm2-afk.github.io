@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portafolio profesional de Edgar Marcial: proyectos, experiencia, herramientas y contacto." />
-  <title>Edgar Marcial — Portafolio</title>
+  <meta name="description" content="Portafolio profesional de Edgar Marcial: proyectos técnicos, gestión, herramientas digitales y trabajo multidisciplinario." />
+  <title>Edgar Marcial — Portfolio</title>
+
   <style>
     :root{
-      --bg:#f5f6f8;
+      --bg:#f5f7fb;
       --paper:#ffffff;
       --ink:#0d1321;
-      --muted:#687184;
-      --line:#e4e7ec;
-      --navy:#0b1425;
-      --navy2:#101d33;
+      --muted:#6c7483;
+      --line:#e6e9ef;
+      --navy:#0a1425;
+      --navy2:#111e34;
       --accent:#8b5cf6;
-      --accent2:#6d28d9;
-      --soft:#f0ecff;
-      --shadow:0 24px 70px rgba(15,23,42,.10);
+      --accent-soft:#ede9fe;
+      --shadow:0 24px 70px rgba(15,23,42,.09);
       --radius:24px;
       --max:1180px;
     }
@@ -32,309 +32,307 @@
         linear-gradient(rgba(15,23,42,.018) 1px, transparent 1px),
         linear-gradient(90deg, rgba(15,23,42,.018) 1px, transparent 1px),
         var(--bg);
-      background-size:32px 32px;
-      line-height:1.6;
+      background-size:34px 34px;
+      line-height:1.65;
     }
 
-    ::selection{background:#ddd6fe;color:#2e1065}
-    a{text-decoration:none;color:inherit}
-    img{max-width:100%}
-    .container{width:min(var(--max), calc(100% - 42px));margin-inline:auto}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(var(--max), calc(100% - 42px));margin:auto}
 
-    /* NAV */
     .topbar{
       position:sticky;top:0;z-index:50;
-      background:rgba(11,20,37,.92);
+      background:rgba(10,20,37,.94);
       backdrop-filter:blur(18px);
       border-bottom:1px solid rgba(255,255,255,.08);
     }
     .nav{
-      min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px;
+      min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:28px;
     }
     .brand{
-      display:flex;align-items:center;gap:12px;color:#fff;font-size:1.2rem;font-weight:800;letter-spacing:.2px;
+      display:flex;align-items:center;gap:12px;color:#fff;font-weight:800;font-size:1.15rem;
     }
     .brand-mark{
-      width:34px;height:34px;border-radius:10px;
-      display:grid;place-items:center;
+      width:35px;height:35px;border-radius:11px;display:grid;place-items:center;
       background:linear-gradient(135deg,#a78bfa,#6d28d9);
-      box-shadow:0 8px 24px rgba(109,40,217,.35);
       font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size:.92rem;
+      box-shadow:0 10px 28px rgba(109,40,217,.28);
+      font-size:.88rem;
     }
     .navlinks{display:flex;align-items:center;gap:28px}
     .navlinks a{
-      color:#d6dbe6;font-size:.96rem;font-weight:600;position:relative;padding:28px 0;
+      color:#d8dde8;font-size:.95rem;font-weight:600;padding:28px 0;position:relative;
     }
-    .navlinks a:after{
-      content:"";position:absolute;left:0;right:0;bottom:20px;height:2px;
-      background:#a78bfa;transform:scaleX(0);transform-origin:left;transition:.2s ease;
+    .navlinks a::after{
+      content:"";position:absolute;left:0;right:0;bottom:20px;height:2px;background:#a78bfa;
+      transform:scaleX(0);transform-origin:left;transition:.2s ease;
     }
     .navlinks a:hover{color:#fff}
-    .navlinks a:hover:after{transform:scaleX(1)}
+    .navlinks a:hover::after{transform:scaleX(1)}
     .nav-cta{
-      padding:10px 15px!important;border:1px solid rgba(255,255,255,.18);border-radius:12px
+      border:1px solid rgba(255,255,255,.18);padding:10px 15px!important;border-radius:12px;
     }
-    .nav-cta:after{display:none}
-    .menu-btn{display:none;background:none;border:0;color:white;font-size:1.55rem;cursor:pointer}
+    .nav-cta::after{display:none!important}
+    .menu-btn{display:none;background:none;border:0;color:#fff;font-size:1.5rem}
 
-    /* HERO */
     .hero{
       position:relative;overflow:hidden;
       background:
-        radial-gradient(circle at 16% 18%, rgba(139,92,246,.24), transparent 31%),
-        radial-gradient(circle at 82% 24%, rgba(59,130,246,.10), transparent 24%),
+        radial-gradient(circle at 14% 18%, rgba(139,92,246,.24), transparent 31%),
+        radial-gradient(circle at 82% 18%, rgba(59,130,246,.10), transparent 26%),
         linear-gradient(135deg,var(--navy),var(--navy2));
-      color:#fff;
-      padding:110px 0 94px;
+      color:#fff;padding:112px 0 96px;
     }
-    .hero:before{
-      content:"";position:absolute;inset:0;pointer-events:none;
+    .hero::before{
+      content:"";position:absolute;inset:0;
       background:
-        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+        linear-gradient(rgba(255,255,255,.026) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.026) 1px, transparent 1px);
       background-size:42px 42px;
-      mask-image:linear-gradient(to bottom, rgba(0,0,0,.9), transparent 90%);
+      mask-image:linear-gradient(to bottom,#000,transparent 88%);
+      pointer-events:none;
     }
-    .hero-grid{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:64px;align-items:center}
+    .hero-grid{position:relative;display:grid;grid-template-columns:1.18fr .82fr;gap:62px;align-items:center}
     .kicker{
-      display:inline-flex;align-items:center;gap:9px;
-      font-size:.82rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#c4b5fd;
+      display:inline-flex;align-items:center;gap:10px;
+      font-size:.8rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#c4b5fd;
     }
-    .kicker:before{content:"";width:28px;height:1px;background:#c4b5fd}
+    .kicker::before{content:"";width:28px;height:1px;background:#c4b5fd}
     h1{
-      margin:18px 0 22px;font-size:clamp(3rem,7vw,6.4rem);line-height:.96;
-      letter-spacing:-.055em;max-width:850px;
+      margin:19px 0 22px;
+      font-size:clamp(3.1rem,7vw,6.25rem);
+      line-height:.96;
+      letter-spacing:-.055em;
+      max-width:880px;
     }
-    .hero .lead{
-      margin:0;max-width:760px;color:#cbd5e1;font-size:1.16rem;line-height:1.8;
+    .lead{
+      margin:0;max-width:760px;color:#cbd5e1;font-size:1.16rem;line-height:1.82;
     }
     .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
     .btn{
       min-height:50px;padding:0 19px;border-radius:14px;
-      display:inline-flex;align-items:center;justify-content:center;gap:9px;
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
       font-weight:800;border:1px solid transparent;transition:.2s ease;
     }
     .btn-primary{background:#fff;color:var(--navy)}
-    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(0,0,0,.16)}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(0,0,0,.15)}
     .btn-ghost{border-color:rgba(255,255,255,.18);color:#fff;background:rgba(255,255,255,.03)}
-    .btn-ghost:hover{background:rgba(255,255,255,.08)}
+    .btn-ghost:hover{background:rgba(255,255,255,.07)}
     .hero-meta{
-      display:flex;gap:24px;flex-wrap:wrap;margin-top:38px;padding-top:26px;
-      border-top:1px solid rgba(255,255,255,.10);color:#aeb7c8;font-size:.92rem;
+      display:flex;gap:24px;flex-wrap:wrap;margin-top:40px;padding-top:26px;
+      border-top:1px solid rgba(255,255,255,.10);color:#aab4c5;font-size:.91rem;
     }
-    .hero-meta strong{color:#fff;font-weight:700}
+    .hero-meta strong{color:#fff}
 
-    .hero-card{
-      position:relative;border-radius:30px;padding:28px;
-      background:linear-gradient(180deg, rgba(255,255,255,.11), rgba(255,255,255,.06));
-      border:1px solid rgba(255,255,255,.13);
-      box-shadow:0 35px 90px rgba(0,0,0,.26);
+    .profile-card{
+      border-radius:30px;padding:28px;
+      background:linear-gradient(180deg,rgba(255,255,255,.11),rgba(255,255,255,.055));
+      border:1px solid rgba(255,255,255,.12);
+      box-shadow:0 36px 90px rgba(0,0,0,.25);
       backdrop-filter:blur(12px);
-    }
-    .hero-card:after{
-      content:"";position:absolute;inset:auto -12px -12px auto;width:84px;height:84px;border-radius:24px;
-      background:linear-gradient(135deg,#8b5cf6,#4f46e5);z-index:-1;filter:blur(.2px)
     }
     .profile-top{display:flex;align-items:center;justify-content:space-between;gap:16px}
     .avatar{
-      width:58px;height:58px;border-radius:18px;display:grid;place-items:center;
-      background:#fff;color:#101827;font-weight:900;font-size:1.1rem;
+      width:60px;height:60px;border-radius:18px;background:#fff;color:#111827;
+      display:grid;place-items:center;font-weight:900;font-size:1.08rem;
     }
     .status{
       display:inline-flex;align-items:center;gap:7px;
       padding:7px 10px;border-radius:999px;background:rgba(16,185,129,.13);
-      color:#a7f3d0;font-size:.78rem;font-weight:800;
+      color:#a7f3d0;font-weight:800;font-size:.77rem;
     }
-    .status-dot{width:7px;height:7px;border-radius:50%;background:#34d399}
-    .hero-card h3{font-size:1.7rem;margin:24px 0 8px}
-    .hero-card p{color:#cbd5e1;margin:0}
-    .mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:24px}
-    .mini{
-      padding:16px;border-radius:16px;background:rgba(255,255,255,.055);
-      border:1px solid rgba(255,255,255,.06)
+    .dot{width:7px;height:7px;border-radius:50%;background:#34d399}
+    .profile-card h3{font-size:1.75rem;margin:24px 0 8px}
+    .profile-card p{margin:0;color:#cbd5e1}
+    .signal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
+    .signal{
+      padding:15px 12px;border-radius:16px;
+      background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.06)
     }
-    .mini b{display:block;color:#fff;font-size:1.08rem}
-    .mini span{color:#9eabc0;font-size:.82rem}
+    .signal b{display:block;color:#fff;font-size:.95rem}
+    .signal span{display:block;color:#98a5ba;font-size:.75rem;margin-top:3px}
 
-    /* GENERAL */
     section{padding:94px 0}
     .section-label{
-      font-size:.78rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--accent2)
+      font-size:.77rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#6d28d9;
     }
     .section-head{
       display:flex;justify-content:space-between;align-items:end;gap:38px;margin-bottom:34px;
     }
     .section-head h2{
-      margin:9px 0 0;font-size:clamp(2.25rem,5vw,4rem);line-height:1.03;letter-spacing:-.045em;
+      margin:9px 0 0;font-size:clamp(2.2rem,5vw,4rem);line-height:1.03;letter-spacing:-.045em;
     }
     .section-head p{max-width:610px;color:var(--muted);margin:0;font-size:1.02rem}
 
-    /* PROJECTS */
-    .project-feature{
-      display:grid;grid-template-columns:1.05fr .95fr;overflow:hidden;
-      background:var(--paper);border:1px solid var(--line);border-radius:30px;
-      box-shadow:0 16px 45px rgba(15,23,42,.06);margin-bottom:22px;
+    .feature{
+      display:grid;grid-template-columns:1.03fr .97fr;overflow:hidden;
+      border:1px solid var(--line);border-radius:30px;background:#fff;
+      box-shadow:0 14px 42px rgba(15,23,42,.055);margin-bottom:22px;
     }
-    .project-visual{
-      min-height:440px;position:relative;padding:34px;
+    .feature-visual{
+      min-height:445px;position:relative;overflow:hidden;padding:34px;color:#fff;
       background:
-        radial-gradient(circle at 25% 25%, rgba(139,92,246,.30), transparent 27%),
-        linear-gradient(145deg,#151f34,#0f172a);
-      color:#fff;overflow:hidden;
+        radial-gradient(circle at 25% 25%, rgba(139,92,246,.31), transparent 26%),
+        linear-gradient(145deg,#17243b,#0f172a);
     }
-    .project-visual .gridlines{
-      position:absolute;inset:0;opacity:.38;
+    .feature-visual::before{
+      content:"";position:absolute;inset:0;
       background:
         linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
-      background-size:28px 28px;
+      background-size:28px 28px;opacity:.45;
     }
-    .diagram{
-      position:absolute;left:12%;right:10%;top:27%;bottom:12%;
-      border:1px solid rgba(255,255,255,.18);border-radius:20px;
-      transform:skewY(-5deg);
-      background:rgba(255,255,255,.05);
-      box-shadow:0 30px 70px rgba(0,0,0,.24);
+    .wire{
+      position:absolute;left:11%;right:9%;top:27%;bottom:12%;
+      border:1px solid rgba(255,255,255,.17);border-radius:22px;
+      background:rgba(255,255,255,.045);transform:skewY(-5deg);
+      box-shadow:0 30px 70px rgba(0,0,0,.23);
     }
-    .diagram:before,.diagram:after{
-      content:"";position:absolute;border:1px solid rgba(196,181,253,.38);border-radius:16px;
+    .wire::before,.wire::after{
+      content:"";position:absolute;border:1px solid rgba(196,181,253,.4);border-radius:15px;
     }
-    .diagram:before{inset:11% 9% 48% 13%}
-    .diagram:after{inset:55% 20% 11% 8%}
-    .visual-tag{position:relative;z-index:2;font-size:.78rem;font-weight:800;color:#ddd6fe}
-    .project-copy{padding:42px;display:flex;flex-direction:column;justify-content:center}
-    .project-copy h3{font-size:2.25rem;line-height:1.08;margin:8px 0 14px;letter-spacing:-.035em}
-    .project-copy p{color:var(--muted);font-size:1.03rem}
-    .project-list{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .project-card{
-      background:var(--paper);border:1px solid var(--line);border-radius:22px;overflow:hidden;
-      transition:.22s ease;box-shadow:0 8px 24px rgba(15,23,42,.035);
+    .wire::before{inset:10% 8% 48% 14%}
+    .wire::after{inset:55% 20% 12% 8%}
+    .visual-label{position:relative;z-index:2;font-size:.76rem;font-weight:900;color:#ddd6fe;letter-spacing:.09em}
+    .feature-copy{padding:42px;display:flex;flex-direction:column;justify-content:center}
+    .feature-copy h3{font-size:2.25rem;line-height:1.08;letter-spacing:-.035em;margin:9px 0 14px}
+    .feature-copy p{color:var(--muted);font-size:1.03rem;margin:0}
+    .micro{
+      display:flex;gap:10px;flex-wrap:wrap;margin-top:21px;
     }
-    .project-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+    .micro span{
+      padding:7px 10px;border-radius:999px;background:#f3f4f6;color:#4b5563;
+      font-size:.78rem;font-weight:800;
+    }
+
+    .project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .project{
+      border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff;
+      transition:.22s ease;box-shadow:0 8px 22px rgba(15,23,42,.035);
+    }
+    .project:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
     .thumb{
       height:190px;position:relative;overflow:hidden;
-      background:linear-gradient(135deg,#182239,#0e1728);
+      background:linear-gradient(145deg,#17243b,#111827);
     }
-    .thumb:before{
-      content:"";position:absolute;inset:20px;border:1px solid rgba(255,255,255,.15);border-radius:16px;
+    .thumb::before{
+      content:"";position:absolute;inset:20px;border:1px solid rgba(255,255,255,.14);border-radius:16px;
       background:
         linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
       background-size:22px 22px;
     }
-    .thumb.a{background:linear-gradient(145deg,#16253f,#202946)}
-    .thumb.b{background:linear-gradient(145deg,#1c1d34,#33255e)}
-    .thumb.c{background:linear-gradient(145deg,#17212c,#1d3441)}
+    .thumb.two{background:linear-gradient(145deg,#19213a,#302659)}
+    .thumb.three{background:linear-gradient(145deg,#15232c,#183845)}
     .project-body{padding:22px}
     .tag{
-      display:inline-flex;padding:6px 9px;border-radius:999px;background:var(--soft);color:#5b21b6;
-      font-size:.75rem;font-weight:900;margin-bottom:10px
+      display:inline-flex;padding:6px 9px;border-radius:999px;background:var(--accent-soft);color:#5b21b6;
+      font-size:.74rem;font-weight:900;margin-bottom:10px;
     }
-    .project-body h3{margin:0 0 9px;font-size:1.25rem}
-    .project-body p{margin:0;color:var(--muted);font-size:.93rem}
-    .card-link{display:inline-flex;align-items:center;gap:7px;margin-top:16px;color:#5b21b6;font-weight:800;font-size:.9rem}
+    .project h3{margin:0 0 8px;font-size:1.24rem}
+    .project p{margin:0;color:var(--muted);font-size:.93rem}
+    .card-link{display:inline-flex;margin-top:16px;color:#5b21b6;font-weight:800;font-size:.9rem}
 
-    /* PROCESS */
-    .process{background:#0d1728;color:#fff}
-    .process .section-label{color:#c4b5fd}
-    .process .section-head p{color:#aab4c5}
-    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-    .step{
-      padding:24px;border-radius:20px;border:1px solid rgba(255,255,255,.09);
-      background:rgba(255,255,255,.035)
+    .thinking{
+      background:#0d1728;color:#fff;
     }
-    .step-num{
-      width:38px;height:38px;border-radius:12px;background:rgba(167,139,250,.15);
-      color:#c4b5fd;display:grid;place-items:center;font-weight:900;margin-bottom:24px
+    .thinking .section-label{color:#c4b5fd}
+    .thinking .section-head p{color:#aab4c5}
+    .principles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .principle{
+      border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.035);
+      border-radius:20px;padding:24px;
     }
-    .step h3{margin:0 0 8px;font-size:1.1rem}
-    .step p{margin:0;color:#aeb8c8;font-size:.9rem}
+    .principle .n{
+      width:38px;height:38px;border-radius:12px;background:rgba(167,139,250,.14);
+      color:#c4b5fd;display:grid;place-items:center;font-weight:900;margin-bottom:22px;
+    }
+    .principle h3{margin:0 0 8px;font-size:1.08rem}
+    .principle p{margin:0;color:#adb7c8;font-size:.9rem}
 
-    /* ABOUT */
-    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:42px}
+    .about-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:42px}
     .about-card{
       background:var(--navy);color:#fff;border-radius:28px;padding:34px;
-      box-shadow:0 25px 70px rgba(15,23,42,.18)
+      box-shadow:0 24px 70px rgba(15,23,42,.17);
     }
     .about-card .section-label{color:#c4b5fd}
     .about-card h3{font-size:2rem;line-height:1.08;margin:13px 0 14px}
     .about-card p{color:#cbd5e1}
-    .about-text h2{font-size:2.6rem;line-height:1.08;letter-spacing:-.04em;margin-top:0}
+    .about-text h2{font-size:2.65rem;line-height:1.08;letter-spacing:-.04em;margin:8px 0 16px}
     .about-text p{color:var(--muted);font-size:1.03rem}
-    .skill-groups{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:25px}
-    .skillbox{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}
-    .skillbox b{display:block;margin-bottom:5px}
-    .skillbox span{color:var(--muted);font-size:.88rem}
-
-    /* RESOURCES */
-    .resources{background:#eceff5}
-    .resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .resource-card{
-      background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;
-      min-height:220px;display:flex;flex-direction:column;justify-content:space-between;
-      transition:.2s ease
+    .tool-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:24px}
+    .tool{
+      background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;
     }
-    .resource-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .tool b{display:block;margin-bottom:5px}
+    .tool span{color:var(--muted);font-size:.88rem}
+
+    .resources{background:#edf0f6}
+    .resource-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .resource{
+      background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;
+      min-height:205px;display:flex;flex-direction:column;justify-content:space-between;transition:.2s ease;
+    }
+    .resource:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
     .resource-icon{
-      width:48px;height:48px;border-radius:15px;display:grid;place-items:center;
-      background:var(--soft);color:#5b21b6;font-weight:900;font-size:1.1rem
+      width:46px;height:46px;border-radius:14px;background:var(--accent-soft);color:#5b21b6;
+      display:grid;place-items:center;font-weight:900;font-size:.9rem;
     }
-    .resource-card h3{margin:20px 0 6px}
-    .resource-card p{color:var(--muted);font-size:.9rem;margin:0}
-    .resource-card strong{margin-top:24px;color:#4c1d95}
+    .resource h3{margin:18px 0 5px}
+    .resource p{margin:0;color:var(--muted);font-size:.88rem}
+    .resource strong{color:#4c1d95;margin-top:22px}
 
-    /* CONTACT */
-    .contact-wrap{
-      background:
-        radial-gradient(circle at 15% 30%, rgba(139,92,246,.22), transparent 28%),
-        linear-gradient(135deg,#0b1425,#111d33);
-      color:#fff;border-radius:32px;padding:46px;
+    .contact{
+      border-radius:32px;padding:46px;color:#fff;
       display:grid;grid-template-columns:1.2fr .8fr;gap:34px;align-items:center;
+      background:
+        radial-gradient(circle at 16% 30%, rgba(139,92,246,.23), transparent 28%),
+        linear-gradient(135deg,#0b1425,#111d33);
     }
-    .contact-wrap h2{font-size:clamp(2.3rem,5vw,4rem);letter-spacing:-.045em;line-height:1.02;margin:10px 0}
-    .contact-wrap p{color:#cbd5e1;margin:0}
-    .contact-actions{display:grid;gap:12px}
+    .contact .section-label{color:#c4b5fd}
+    .contact h2{font-size:clamp(2.3rem,5vw,4rem);line-height:1.02;letter-spacing:-.045em;margin:10px 0}
+    .contact p{margin:0;color:#cbd5e1}
+    .contact-links{display:grid;gap:12px}
     .contact-link{
       padding:15px 17px;border-radius:14px;border:1px solid rgba(255,255,255,.12);
-      background:rgba(255,255,255,.05);color:#fff;font-weight:700
+      background:rgba(255,255,255,.05);font-weight:700;
     }
     .contact-link:hover{background:rgba(255,255,255,.09)}
 
     footer{padding:30px 0 40px;color:var(--muted);font-size:.9rem}
-    .footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 
-    /* REVEAL */
     .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease}
     .reveal.visible{opacity:1;transform:none}
     .top-btn{
       position:fixed;right:22px;bottom:22px;width:44px;height:44px;border-radius:14px;
-      border:1px solid var(--line);background:#fff;box-shadow:0 12px 30px rgba(15,23,42,.14);
-      display:grid;place-items:center;font-weight:900;opacity:0;pointer-events:none;transition:.2s;z-index:40
+      border:1px solid var(--line);background:#fff;display:grid;place-items:center;
+      box-shadow:0 12px 30px rgba(15,23,42,.14);opacity:0;pointer-events:none;transition:.2s;z-index:40;
+      font-weight:900;
     }
     .top-btn.show{opacity:1;pointer-events:auto}
 
     @media(max-width:980px){
-      .hero-grid,.project-feature,.about-grid,.contact-wrap{grid-template-columns:1fr}
-      .project-list,.resource-grid{grid-template-columns:repeat(2,1fr)}
-      .steps{grid-template-columns:repeat(2,1fr)}
-      .hero-card{max-width:620px}
+      .hero-grid,.feature,.about-grid,.contact{grid-template-columns:1fr}
+      .project-grid{grid-template-columns:repeat(2,1fr)}
+      .principles{grid-template-columns:repeat(2,1fr)}
+      .resource-grid{grid-template-columns:repeat(2,1fr)}
+      .profile-card{max-width:650px}
     }
     @media(max-width:760px){
       .navlinks{display:none}
       .navlinks.open{
         display:flex;position:absolute;top:78px;left:0;right:0;background:var(--navy);
-        padding:18px 22px 24px;flex-direction:column;align-items:flex-start;gap:4px
+        flex-direction:column;align-items:flex-start;gap:3px;padding:18px 22px 24px;
       }
       .navlinks a{padding:10px 0}
-      .navlinks a:after{display:none}
+      .navlinks a::after{display:none}
       .menu-btn{display:block}
       .hero{padding-top:82px}
       .section-head{align-items:flex-start;flex-direction:column}
-      .project-list,.resource-grid,.steps,.skill-groups{grid-template-columns:1fr}
-      .project-visual{min-height:300px}
-      .project-copy{padding:28px}
-      .contact-wrap{padding:30px}
+      .project-grid,.principles,.resource-grid,.tool-grid{grid-template-columns:1fr}
+      .feature-visual{min-height:300px}
+      .feature-copy,.contact{padding:30px}
+      .signal-grid{grid-template-columns:1fr}
       h1{font-size:clamp(3.2rem,16vw,5rem)}
     }
   </style>
@@ -350,264 +348,278 @@
 
     <nav class="navlinks" id="navlinks">
       <a href="#proyectos">Proyectos</a>
-      <a href="#proceso">Proceso</a>
+      <a href="#enfoque">Enfoque</a>
       <a href="#sobre-mi">Sobre mí</a>
-      <a href="#recursos">CV & Recursos</a>
+      <a href="#recursos">Recursos</a>
       <a class="nav-cta" href="#contacto">Contacto</a>
     </nav>
 
-    <button class="menu-btn" aria-label="Abrir menú" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+    <button class="menu-btn" onclick="document.getElementById('navlinks').classList.toggle('open')" aria-label="Abrir menú">☰</button>
   </div>
 </header>
 
 <main>
-  <section class="hero" id="inicio">
-    <div class="container hero-grid">
-      <div class="reveal">
-        <span class="kicker">PORTAFOLIO PROFESIONAL</span>
-        <h1>Diseño, técnica y representación.</h1>
-        <p class="lead">
-          Un espacio para presentar proyectos académicos y técnicos con una imagen clara, ordenada y profesional:
-          planos, modelado, análisis, documentación y visualización.
-        </p>
 
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#proyectos">Explorar proyectos <span>↗</span></a>
-          <a class="btn btn-ghost" href="#recursos">Ver CV y portafolio</a>
-        </div>
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <span class="kicker">PORTAFOLIO PERSONAL</span>
+      <h1>Ideas complejas. Soluciones claras.</h1>
+      <p class="lead">
+        Desarrollo proyectos donde el análisis, la organización y las herramientas digitales se convierten en decisiones concretas.
+        Este espacio reúne una selección de trabajo técnico, académico y personal.
+      </p>
 
-        <div class="hero-meta">
-          <span><strong>Enfoque:</strong> Arquitectura + Ingeniería</span>
-          <span><strong>Formato:</strong> Proyectos + CV + contacto</span>
-        </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#proyectos">Explorar proyectos ↗</a>
+        <a class="btn btn-ghost" href="#recursos">CV & recursos</a>
       </div>
 
-      <aside class="hero-card reveal">
-        <div class="profile-top">
-          <div class="avatar">EM</div>
-          <span class="status"><span class="status-dot"></span> Portafolio activo</span>
-        </div>
-        <h3>Edgar Marcial</h3>
-        <p>
-          Presentación profesional enfocada en proyectos, documentación técnica, modelado y comunicación visual.
-        </p>
-
-        <div class="mini-grid">
-          <div class="mini"><b>CAD</b><span>Dibujo y documentación</span></div>
-          <div class="mini"><b>BIM</b><span>Modelado y coordinación</span></div>
-          <div class="mini"><b>3D</b><span>Representación y visualización</span></div>
-          <div class="mini"><b>PDF</b><span>Entregables y portafolio</span></div>
-        </div>
-      </aside>
+      <div class="hero-meta">
+        <span><strong>Intereses:</strong> sistemas, proyectos y tecnología</span>
+        <span><strong>Forma de trabajo:</strong> analizar, estructurar, ejecutar</span>
+      </div>
     </div>
-  </section>
 
-  <section id="proyectos">
-    <div class="container">
-      <div class="section-head reveal">
-        <div>
-          <span class="section-label">Selección de trabajo</span>
-          <h2>Proyectos destacados.</h2>
-        </div>
-        <p>
-          Una estructura pensada para que cada proyecto tenga contexto, objetivo, proceso y resultado; no solo una imagen final.
-        </p>
+    <aside class="profile-card reveal">
+      <div class="profile-top">
+        <div class="avatar">EM</div>
+        <span class="status"><span class="dot"></span> Perfil activo</span>
       </div>
 
-      <article class="project-feature reveal">
-        <div class="project-visual">
-          <div class="gridlines"></div>
-          <span class="visual-tag">PROYECTO DESTACADO · ARQUITECTURA</span>
-          <div class="diagram"></div>
+      <h3>Edgar Marcial</h3>
+      <p>
+        Me interesan los problemas que exigen criterio técnico, organización y una buena herramienta para resolverlos.
+      </p>
+
+      <div class="signal-grid">
+        <div class="signal"><b>Análisis</b><span>datos · lógica · criterio</span></div>
+        <div class="signal"><b>Gestión</b><span>orden · recursos · decisiones</span></div>
+        <div class="signal"><b>Digital</b><span>modelado · automatización · web</span></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section id="proyectos">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="section-label">Trabajo seleccionado</span>
+        <h2>Proyectos que muestran cómo pienso.</h2>
+      </div>
+      <p>
+        Más que una lista de entregas, cada proyecto muestra un problema, un proceso y una solución.
+      </p>
+    </div>
+
+    <article class="feature reveal">
+      <div class="feature-visual">
+        <span class="visual-label">PROYECTO DESTACADO</span>
+        <div class="wire"></div>
+      </div>
+
+      <div class="feature-copy">
+        <span class="section-label">Yaku Ribera</span>
+        <h3>Diseño de un proyecto conectado con su contexto.</h3>
+        <p>
+          Propuesta académica desarrollada desde el análisis del lugar, el recorrido, el paisaje y la resolución técnica del conjunto.
+          El proyecto resume una forma de trabajar: entender primero, organizar después y representar con claridad.
+        </p>
+
+        <div class="micro">
+          <span>análisis</span><span>modelado</span><span>documentación</span><span>presentación</span>
         </div>
-        <div class="project-copy">
-          <span class="section-label">Yaku Ribera</span>
-          <h3>Arquitectura vinculada al paisaje ribereño.</h3>
-          <p>
-            Proyecto académico que articula mirador, cafetería, librería y recorrido elevado,
-            buscando una relación directa entre espacio construido, permanencia y paisaje.
-          </p>
-          <div class="hero-actions" style="margin-top:20px">
-            <a class="btn" style="background:#0f172a;color:#fff" href="#">Ver proyecto completo</a>
-            <a class="btn" style="border-color:var(--line);color:var(--ink)" href="#">Abrir láminas / PDF</a>
-          </div>
+
+        <div class="hero-actions" style="margin-top:22px">
+          <a href="#" class="btn" style="background:#0f172a;color:#fff">Ver proyecto completo</a>
+          <a href="#" class="btn" style="border-color:var(--line);color:var(--ink)">Abrir PDF</a>
+        </div>
+      </div>
+    </article>
+
+    <div class="project-grid">
+      <article class="project reveal">
+        <div class="thumb"></div>
+        <div class="project-body">
+          <span class="tag">Análisis técnico</span>
+          <h3>Hidrología y escorrentía</h3>
+          <p>Datos, parámetros, tablas y criterios organizados para obtener resultados verificables.</p>
+          <a class="card-link" href="#">Ver proyecto →</a>
         </div>
       </article>
 
-      <div class="project-list">
-        <article class="project-card reveal">
-          <div class="thumb a"></div>
-          <div class="project-body">
-            <span class="tag">Hidrología</span>
-            <h3>Análisis TR-55</h3>
-            <p>CN ponderado, tablas, fórmulas, parámetros hidrológicos y documentación técnica.</p>
-            <a class="card-link" href="#">Ver proyecto →</a>
-          </div>
-        </article>
+      <article class="project reveal">
+        <div class="thumb two"></div>
+        <div class="project-body">
+          <span class="tag">Estructuras</span>
+          <h3>Modelos, reacciones y comportamiento</h3>
+          <p>Resolución paso a paso y representación de sistemas estructurales de forma clara.</p>
+          <a class="card-link" href="#">Ver proyecto →</a>
+        </div>
+      </article>
 
-        <article class="project-card reveal">
-          <div class="thumb b"></div>
-          <div class="project-body">
-            <span class="tag">Estructuras</span>
-            <h3>Reacciones y diagramas</h3>
-            <p>Análisis de sistemas estructurales, cortante, momento flector y apoyos.</p>
-            <a class="card-link" href="#">Ver proyecto →</a>
-          </div>
-        </article>
+      <article class="project reveal">
+        <div class="thumb three"></div>
+        <div class="project-body">
+          <span class="tag">Herramientas digitales</span>
+          <h3>Malla académica interactiva</h3>
+          <p>Organización de información, relaciones entre materias y una interfaz para navegar el plan de estudios.</p>
+          <a class="card-link" href="#">Ver proyecto →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-        <article class="project-card reveal">
-          <div class="thumb c"></div>
-          <div class="project-body">
-            <span class="tag">BIM / CAD / 3D</span>
-            <h3>Modelado y representación</h3>
-            <p>Planos, modelos, láminas y visualización mediante herramientas digitales.</p>
-            <a class="card-link" href="#">Ver proyecto →</a>
-          </div>
-        </article>
+<section class="thinking" id="enfoque">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="section-label">Enfoque</span>
+        <h2>Una forma de resolver.</h2>
+      </div>
+      <p>
+        Distintos tipos de proyecto, una misma lógica de trabajo.
+      </p>
+    </div>
+
+    <div class="principles">
+      <div class="principle reveal">
+        <div class="n">01</div>
+        <h3>Entender</h3>
+        <p>Identificar el problema, sus variables y las restricciones reales antes de proponer.</p>
+      </div>
+      <div class="principle reveal">
+        <div class="n">02</div>
+        <h3>Estructurar</h3>
+        <p>Ordenar información, relaciones, tareas y decisiones para construir una lógica de trabajo.</p>
+      </div>
+      <div class="principle reveal">
+        <div class="n">03</div>
+        <h3>Optimizar</h3>
+        <p>Buscar una solución más clara, eficiente y fácil de mantener o repetir.</p>
+      </div>
+      <div class="principle reveal">
+        <div class="n">04</div>
+        <h3>Comunicar</h3>
+        <p>Convertir el resultado en planos, tablas, interfaces, documentos o visuales que se entiendan rápido.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="process" id="proceso">
-    <div class="container">
-      <div class="section-head reveal">
+<section id="sobre-mi">
+  <div class="container about-grid">
+    <aside class="about-card reveal">
+      <span class="section-label">Perfil</span>
+      <h3>Me interesa conectar lo técnico con lo útil.</h3>
+      <p>
+        Disfruto trabajar en proyectos donde no basta con calcular o diseñar:
+        también importa organizar, decidir, automatizar y presentar bien el resultado.
+      </p>
+    </aside>
+
+    <div class="about-text reveal">
+      <span class="section-label">Sobre mí</span>
+      <h2>Un perfil que cruza varias disciplinas.</h2>
+      <p>
+        Mi trabajo se mueve entre el análisis técnico, la gestión de proyectos y el uso de herramientas digitales.
+        Esa mezcla me permite abordar un mismo problema desde más de una perspectiva sin perder claridad.
+      </p>
+      <p>
+        Me interesa especialmente encontrar formas de hacer procesos más ordenados, visuales y eficientes,
+        ya sea mediante modelado, hojas de cálculo, documentación o soluciones digitales.
+      </p>
+
+      <div class="tool-grid">
+        <div class="tool"><b>Modelado & documentación</b><span>AutoCAD, Civil 3D, Revit y SketchUp.</span></div>
+        <div class="tool"><b>Representación</b><span>Illustrator, diagramas, láminas y PDFs.</span></div>
+        <div class="tool"><b>Análisis & organización</b><span>Excel, tablas, fórmulas y control de información.</span></div>
+        <div class="tool"><b>Digital</b><span>Web, lógica, automatización y herramientas interactivas.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="resources" id="recursos">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="section-label">Documentos & enlaces</span>
+        <h2>Todo en un solo lugar.</h2>
+      </div>
+      <p>
+        Recursos clave para conocer mi trabajo, revisar proyectos o contactarme.
+      </p>
+    </div>
+
+    <div class="resource-grid">
+      <a class="resource reveal" href="#" target="_blank" rel="noopener">
         <div>
-          <span class="section-label">Metodología</span>
-          <h2>Cómo desarrollo un proyecto.</h2>
+          <div class="resource-icon">CV</div>
+          <h3>Currículum</h3>
+          <p>Formación, experiencia, herramientas y perfil profesional.</p>
         </div>
-        <p>
-          La web también explica el proceso de trabajo para que quien revise tu portafolio entienda cómo llegaste al resultado.
-        </p>
-      </div>
+        <strong>Descargar →</strong>
+      </a>
 
-      <div class="steps">
-        <div class="step reveal">
-          <div class="step-num">01</div>
-          <h3>Análisis</h3>
-          <p>Lectura del problema, sitio, condicionantes, requisitos y objetivos del proyecto.</p>
-        </div>
-        <div class="step reveal">
-          <div class="step-num">02</div>
-          <h3>Desarrollo</h3>
-          <p>Planteamiento de alternativas, criterios de diseño, cálculos y decisiones técnicas.</p>
-        </div>
-        <div class="step reveal">
-          <div class="step-num">03</div>
-          <h3>Modelado</h3>
-          <p>Construcción del proyecto en CAD, BIM o 3D según el tipo de entrega.</p>
-        </div>
-        <div class="step reveal">
-          <div class="step-num">04</div>
-          <h3>Comunicación</h3>
-          <p>Planos, láminas, renders, diagramas, memoria y presentación final.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="sobre-mi">
-    <div class="container about-grid">
-      <aside class="about-card reveal">
-        <span class="section-label">Perfil</span>
-        <h3>Trabajo técnico con una presentación clara.</h3>
-        <p>
-          Este portafolio busca mostrar tanto el resultado final como el razonamiento,
-          la representación y la documentación que hay detrás de cada proyecto.
-        </p>
-      </aside>
-
-      <div class="about-text reveal">
-        <span class="section-label">Sobre mí</span>
-        <h2>Un perfil multidisciplinario.</h2>
-        <p>
-          Mi trabajo combina representación arquitectónica, modelado, dibujo técnico,
-          análisis y preparación de entregables académicos y profesionales.
-        </p>
-        <p>
-          La intención de este sitio es reunir en un solo lugar mis proyectos más importantes,
-          mi currículum, documentos y enlaces profesionales.
-        </p>
-
-        <div class="skill-groups">
-          <div class="skillbox"><b>AutoCAD</b><span>Dibujo técnico, plantas, cortes y detalles.</span></div>
-          <div class="skillbox"><b>Revit</b><span>Modelado BIM y documentación.</span></div>
-          <div class="skillbox"><b>SketchUp</b><span>Modelado conceptual y espacial.</span></div>
-          <div class="skillbox"><b>Illustrator</b><span>Láminas, diagramas y presentación gráfica.</span></div>
-          <div class="skillbox"><b>Excel</b><span>Tablas, fórmulas, presupuestos y análisis.</span></div>
-          <div class="skillbox"><b>Documentación</b><span>Memorias, PDFs y presentaciones finales.</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="resources" id="recursos">
-    <div class="container">
-      <div class="section-head reveal">
+      <a class="resource reveal" href="#" target="_blank" rel="noopener">
         <div>
-          <span class="section-label">Documentos</span>
-          <h2>CV & recursos.</h2>
+          <div class="resource-icon">PDF</div>
+          <h3>Portafolio</h3>
+          <p>Selección completa de proyectos y procesos.</p>
         </div>
+        <strong>Abrir →</strong>
+      </a>
+
+      <a class="resource reveal" href="#" target="_blank" rel="noopener">
+        <div>
+          <div class="resource-icon">in</div>
+          <h3>LinkedIn</h3>
+          <p>Perfil, formación y conexiones profesionales.</p>
+        </div>
+        <strong>Visitar →</strong>
+      </a>
+
+      <a class="resource reveal" href="#" target="_blank" rel="noopener">
+        <div>
+          <div class="resource-icon">{ }</div>
+          <h3>Proyectos digitales</h3>
+          <p>Herramientas, pruebas, interfaces y desarrollos personales.</p>
+        </div>
+        <strong>Explorar →</strong>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="container">
+    <div class="contact reveal">
+      <div>
+        <span class="section-label">Contacto</span>
+        <h2>Hablemos.</h2>
         <p>
-          Esta sección puede conectar directamente con tus archivos reales para que empresas, profesores o clientes los descarguen.
+          Para proyectos, colaboraciones, prácticas, oportunidades académicas o trabajo profesional.
         </p>
       </div>
 
-      <div class="resource-grid">
-        <a class="resource-card reveal" href="#" target="_blank" rel="noopener">
-          <div>
-            <div class="resource-icon">CV</div>
-            <h3>Currículum Vitae</h3>
-            <p>Versión PDF actualizada con formación, herramientas y experiencia.</p>
-          </div>
-          <strong>Descargar CV →</strong>
-        </a>
-
-        <a class="resource-card reveal" href="#" target="_blank" rel="noopener">
-          <div>
-            <div class="resource-icon">PDF</div>
-            <h3>Portafolio completo</h3>
-            <p>Documento con proyectos seleccionados, láminas y procesos.</p>
-          </div>
-          <strong>Abrir portafolio →</strong>
-        </a>
-
-        <a class="resource-card reveal" href="#" target="_blank" rel="noopener">
-          <div>
-            <div class="resource-icon">in</div>
-            <h3>LinkedIn</h3>
-            <p>Perfil profesional, formación y contacto.</p>
-          </div>
-          <strong>Visitar perfil →</strong>
-        </a>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:TU_CORREO@ejemplo.com">✉ TU_CORREO@ejemplo.com</a>
+        <a class="contact-link" href="#" target="_blank" rel="noopener">↗ LinkedIn</a>
+        <a class="contact-link" href="#" target="_blank" rel="noopener">↗ Portafolio PDF</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="contacto">
-    <div class="container">
-      <div class="contact-wrap reveal">
-        <div>
-          <span class="section-label" style="color:#c4b5fd">Contacto</span>
-          <h2>Conectemos.</h2>
-          <p>
-            Usa esta sección para contacto académico, colaboraciones, prácticas o propuestas profesionales.
-          </p>
-        </div>
-
-        <div class="contact-actions">
-          <a class="contact-link" href="mailto:TU_CORREO@ejemplo.com">✉ TU_CORREO@ejemplo.com</a>
-          <a class="contact-link" href="#" target="_blank" rel="noopener">↗ LinkedIn</a>
-          <a class="contact-link" href="#" target="_blank" rel="noopener">↗ Portafolio PDF</a>
-        </div>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer>
-  <div class="container footer-inner">
-    <span>© <span id="year"></span> Edgar Marcial. Portafolio profesional.</span>
-    <span>Diseño responsive · HTML / CSS / JS</span>
+  <div class="container footer">
+    <span>© <span id="year"></span> Edgar Marcial.</span>
+    <span>Portfolio · Projects · Systems · Digital</span>
   </div>
 </footer>
 
